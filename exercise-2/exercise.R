@@ -2,9 +2,17 @@
 
 # Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
+CompareLength <- function(one,two){
+  count1 = 0
+  count2 = 0
+  
+  x = abs(length(c(one)) - length(c(two)))
+  return(x)
+}
 
 
 # Pass two vectors of different length to your `CompareLength` function
+r = CompareLength(c(1,2,3,4),c(1,2,3,4,5,3,4,5,6,7,8,2))
 
 
 # Write a function `DescribeDifference` that will return one of the following statements:
